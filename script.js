@@ -13,26 +13,26 @@ var seconds = 0;
 var myInterval = -1;
 var check = 0;
 
-function timer(){
+// function timer(){
   
-  if(myInterval == -1){
-    myInterval = setInterval(function(){
-      seconds++;
-      // if (seconds >= 60) {
-      //   minutes += 1;
-      //   time = 0;
-      // }  
-      title.innerHTML = seconds;
-    }, 1000);
-  // }else{
-  //   clearInterval(myInterval);
-  //   // myInterval=-1;
-  }else if(check==10){
-    clearInterval(myInterval);
-    myInterval=-1;
-  }
+//   if(myInterval == -1){
+//     myInterval = setInterval(function(){
+//       seconds++;
+//       // if (seconds >= 60) {
+//       //   minutes += 1;
+//       //   time = 0;
+//       // }  
+//       title.innerHTML = seconds;
+//     }, 1000);
+//   // }else{
+//   //   clearInterval(myInterval);
+//   //   // myInterval=-1;
+//   }else if(check==10){
+//     clearInterval(myInterval);
+//     myInterval=-1;
+//   }
     
-}
+// }
 
 function flipCard() {
   if (lockBoard) return;
@@ -46,7 +46,7 @@ function flipCard() {
   }else{
     secondCard = this;
     checkMatch();
-    timer();
+//     timer();
   }
   
 }
